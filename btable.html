@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Btables</title>
+
+
+	<!-- <link href="https://unpkg.com/bootstrap-table@1.22.1/dist/bootstrap-table.min.css" rel="stylesheet"> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script>
+    $(document).ready(function () {
+        $('#yourTable').bootstrapTable();
+
+        $('#load').click(function (){
+        	console.log("lkajdsfljasl;kdj");
+        });
+    });
+</script>
+
+
+</head>
+<body>
+
+	<div class="mb-3">
+		<button class="btn btn-success" id="load">clikc</button>
+	</div>
+
+	<table id="yourTable" data-toggle="table" data-url="https://jsonplaceholder.typicode.com/posts" data-search="true">
+<thead>
+	<tr>
+      <th data-field="userId">USER_ID</th>
+      <th data-field="id">ID</th>
+      <th data-field="title">Item Name</th>
+      <th data-field="body">Item Price</th>
+    </tr>
+</thead>
+<tbody id="data">
+	
+
+</tbody>
+
+	</table>
+
+<script>
+	$(document).ready(()=>{
+
+
+	});
+</script>
+
+
+</body>
+</html>
